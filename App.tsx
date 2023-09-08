@@ -1,36 +1,14 @@
+import {View, Text} from 'react-native';
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-  Button,
-  View,
-  Alert,
-  StyleSheet,
-} from 'react-native';
+import FlatList from './src/components/FlatList';
 
-function App() {
+const App = () => {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <Text style={styles.text}>Hello World !</Text>
-        <Button
-          onPress={() => {
-            Alert.alert('You clicked me');
-          }}
-          title="Press Me"
-        />
-      </View>
-    </SafeAreaView>
+    <View>
+      {/* <Text>App</Text> */}
+      <FlatList />
+    </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'white',
-  },
-  text: {
-    color: 'black',
-  },
-});
+};
 
 export default App;
