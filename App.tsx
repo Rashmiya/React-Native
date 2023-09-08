@@ -24,8 +24,6 @@ function App() {
   );
 }
 
-export default App;
-
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
@@ -34,3 +32,5 @@ const styles = StyleSheet.create({
     color: 'black',
   },
 });
+
+export default App;
