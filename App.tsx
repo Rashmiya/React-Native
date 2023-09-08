@@ -1,11 +1,18 @@
 import React from 'react';
-import {SafeAreaView, Text, Button, View, Alert} from 'react-native';
+import {
+  SafeAreaView,
+  Text,
+  Button,
+  View,
+  Alert,
+  StyleSheet,
+} from 'react-native';
 
 function App() {
   return (
     <SafeAreaView>
-      <View>
-        <Text>Hello World !</Text>
+      <View style={styles.container}>
+        <Text style={styles.text}>Hello World !</Text>
         <Button
           onPress={() => {
             Alert.alert('You clicked me');
@@ -18,3 +25,12 @@ function App() {
 }
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+  },
+  text: {
+    color: 'black',
+  },
+});
