@@ -4,7 +4,7 @@ import React from 'react';
 const FlatList = () => {
   return (
     <View>
-      <Text>FlatList</Text>
+      <Text style={styles.headerText}>FlatList</Text>
       <View style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
           <Text>Card 1</Text>
@@ -21,6 +21,11 @@ const FlatList = () => {
 };
 
 const styles = StyleSheet.create({
+  headerText: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    paddingHorizontal: 15,
+  },
   container: {
     flex: 1,
     flexDirection: 'row',
